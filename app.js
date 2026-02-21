@@ -1,8 +1,8 @@
-function hello() {
+function sayHello() {
     console.log("Hello World");
 }
-hello()
+sayHello()
 
-module.exports = hello
+module.exports = sayHello
 
 
