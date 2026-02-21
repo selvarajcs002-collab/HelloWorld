@@ -31,7 +31,7 @@ pipeline{
         }
         stage('Build the Image'){
             steps{
-                bat 'docker build -t $DOCKER_IMAGE:${BUILD_NUMBER} .'
+                bat 'docker build -t %DOCKER_IMAGE%:%BUILD_NUMBER% .'
             }
         }
         stage('Push the Image'){
@@ -43,7 +43,7 @@ pipeline{
                 )]){
                     bat '''
                         echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-                        docker push $DOCKER_IMAGE:${BUILD_NUMBER}
+                        docker push %DOCKER_IMAGE%:%BUILD_NUMBER%
                     '''
                 }
             }
