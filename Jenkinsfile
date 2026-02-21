@@ -22,7 +22,7 @@ pipeline{
         }
         stage('Run the Test Cases'){
             steps{
-                sh 'npm test'
+                bat 'npm test'
             }
         }
     }
