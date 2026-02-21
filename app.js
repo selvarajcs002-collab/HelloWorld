@@ -8,6 +8,10 @@ function add(a, b) {
 }
 console.log(add(1, 2));
 
-module.exports = { sayHello, add };
+function sub(a, b) {
+    return a - b;
+}
+
+module.exports = { sayHello, add, sub };
 
 
