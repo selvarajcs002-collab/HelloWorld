@@ -25,6 +25,7 @@ pipeline{
                 sh 'npm test'
             }
         }
+    }
         post{
             success{
                 echo 'Build Success'
@@ -33,5 +34,5 @@ pipeline{
                 echo 'Build Failed! Please try again.'
             }
         }
-    }
+    
 }
