@@ -1,5 +1,4 @@
-const sayHello = require('./app');
-const add = require('./app');
+const { sayHello, add } = require('./app');
 
 if (sayHello() === "Hello World" && add(1, 2) == 3) {
     console.log("Test Passed ✅");
