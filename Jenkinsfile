@@ -49,7 +49,10 @@ pipeline{
             }
            
         }
-        post{
+        
+    
+    }
+    post{
             success{
                 echo 'Build Success'
             }
@@ -57,6 +60,4 @@ pipeline{
                 echo 'Build Failed! Please try again.'
             }
         }
-    
-    }
 }
